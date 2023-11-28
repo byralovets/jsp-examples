@@ -3,7 +3,6 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jstl/fmt" %>
-
 <%
     final Date date = new Date();
     request.setAttribute("date", date);
@@ -11,9 +10,13 @@
     final double number = 10.0 / 3;
     request.setAttribute("number", number);
 %>
+
+<fmt:setBundle basename="messages"/>
+<fmt:setLocale value="ru"/>
+
 <html>
     <head>
-        <title>Примеры</title>
+        <title><fmt:message key="main.title"/></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <%@ include file="WEB-INF/jsp/bootstrap/styles-import.jsp"%>
     </head>

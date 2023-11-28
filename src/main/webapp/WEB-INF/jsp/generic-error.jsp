@@ -22,7 +22,7 @@
             <img src="<c:url value="/img/sad-cat.png"/>" alt="Грустный кот" height="145px">
         </div>
         <div class="ms-3">
-            <h1>Упс...</h1>
+            <h1>Упс.../></h1>
             <p>Кажется, произошла ошибка</p>
 
             <c:choose>
