@@ -39,7 +39,7 @@
                     <p class="mb-0">Проблема: <c:out value="${reason}"/></p>
                 </c:when>
                 <c:otherwise>
-                    <p class="mb-0">Неизвестная проблема</p>
+                    <p class="mb-0">Неизвестная проблема: <c:out value="${pageContext.exception.localizedMessage}"/></p>
                 </c:otherwise>
             </c:choose>
             <%@ include file="../jsp/bootstrap/js-import.jsp"%>

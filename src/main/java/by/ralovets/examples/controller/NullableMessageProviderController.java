@@ -14,9 +14,6 @@ public class NullableMessageProviderController extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException {
-        Locale locale = Locale.of("en");
-        resp.setLocale(locale);
-
         throw new BadRequestException(null);
     }
 }
